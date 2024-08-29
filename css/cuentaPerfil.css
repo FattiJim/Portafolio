@@ -1,0 +1,74 @@
+.nuestro-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+body,
+header,
+footer {
+    background: rgba(5, 10, 24, 0.966);
+    color: aliceblue;
+}
+
+header nav ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#movieCarousel .carousel-item img {
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main {
+    flex: 1;
+
+}
+
+#movieCarousel,
+#continuaViendoCarousel {
+    position: relative;
+    z-index: 1;
+}
+
+#movieCarousel .carousel-control-prev,
+#movieCarousel .carousel-control-next,
+#continuaViendoCarousel .carousel-control-prev,
+#continuaViendoCarousel .carousel-control-next {
+    z-index: 2;
+}

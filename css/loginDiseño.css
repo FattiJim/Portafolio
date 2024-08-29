@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    color: #3b5a74;
+    background-image: linear-gradient(90deg, rgba(59, 30, 116, 0.924) 0%, rgba(2, 1, 14, 0.446) 50%, rgba(5, 91, 159, 0.902) 100%),
+        url('https://dkr0pu7ej5xex.cloudfront.net/wp-content/uploads/2017/04/24135159/Netflix-Background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Contenedor del formulario */
+.login-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    flex: 1;
+}
+
+
+/* Estilo del contenedor del formulario */
+.login-html {
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    /* Altura fija */
+    background: rgba(5, 10, 24, 0.966);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    overflow: auto;
+}
+
+
+/* Estilo de los tabs */
+.login-html .tab {
+    font-size: 18px;
+    margin-right: 8px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.login-html .sign-in:checked+.tab,
+.login-html .sign-up:checked+.tab {
+    color: #fff;
+    border-color: #3bc0d1;
+}
+
+/* Estilos para las secciones de Entrar y Registro */
+.login-form {
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.login-form .group {
+    margin-bottom: 10px;
+}
+
+.login-form .input {
+    padding: 8px 12px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+.login-form .input:hover {
+    border-color: #3bd1d1;
+}
+
+.login-form .button {
+    background-color: #3b70d1;
+    color: white;
+    border-radius: 25px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* Estilo de la imagen del logo */
+.img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo del footer */
+#footer {
+    background-color: rgba(5, 10, 24, 0.966);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+/* Estilos para ocultar y mostrar las secciones de Entrar y Registro */
+.login-html .sign-in-htm,
+.login-html .sign-up-htm {
+    display: none;
+}
+
+#tab-1:checked~.login-form .sign-in-htm {
+    display: block;
+}
+
+#tab-2:checked~.login-form .sign-up-htm {
+    display: block;
+}
